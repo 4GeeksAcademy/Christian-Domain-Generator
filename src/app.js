@@ -7,14 +7,15 @@ import "./assets/img/4geeks.ico";
 
 window.onload = function() {
   console.log("Any string");
+
   document.querySelector("#boton").onclick = () => {
-    document.querySelector("#generador").innerHTML = `<h1> ${
+    document.querySelector("#generador").innerHTML = `${
       resultadoFinal[Math.floor(Math.random() * resultadoFinal.length)]
-    }</h1>`;
+    }`;
   };
 
   let pronombres = ["Nuestro", "El", "Mi"];
-  let adjetivos = ["asombroso", "triste", "increíble"];
+  let adjetivos = ["asombroso", "emocionante", "increíble"];
   let sustantivos = ["momento", "curso", "trabajo"];
   let dominios = [".com", ".es", ".gg", ".perdónporelretraso"];
 
